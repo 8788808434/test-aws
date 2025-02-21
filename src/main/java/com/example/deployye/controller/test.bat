@@ -1,10 +1,10 @@
-#!/bin/bash
-def abc = 13
-def bdc = 23
+@echo off
+set abc=13
+set bdc=23
 
-if[ bdc -gt abc ] 
-then
-  echo "bdc is greater"
-else
-  echo "abc is greater"
-fi
+if %bdc% GTR %abc% (
+    echo bdc is greater
+) else (
+    echo abc is greater
+)
+pause
